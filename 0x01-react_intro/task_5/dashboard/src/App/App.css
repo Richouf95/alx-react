@@ -1,0 +1,32 @@
+.App-header {
+	display: flex;
+	align-items: center;
+	font-family: sans-serif;
+	border-bottom: 2px solid red;
+}
+
+.App-header img {
+	width: 200px;
+}
+
+.App-header h1 {
+	color: red;
+	font-size: 3rem;
+}
+
+
+.App-body {
+	padding: 20px;
+}
+
+input {
+	margin: 0 10px;
+}
+
+.App-footer {
+	border-top: 2px solid red;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
