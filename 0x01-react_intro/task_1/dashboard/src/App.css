@@ -1,0 +1,32 @@
+*{
+    font-family: sans-serif;
+}
+
+.App-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #DE354B;
+}
+
+h1 {
+    color: #DE354B;
+    font-size: 3rem;
+}
+
+img {
+    width: 200px;
+}
+
+.App-body {
+    padding: 20px;
+}
+
+.App-footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px;
+    border-top: 3px solid #DE354B;
+    text-align: center;
+    font-style: italic;
+}
