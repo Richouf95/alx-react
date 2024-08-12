@@ -17,13 +17,11 @@ class App extends React.Component {
     // Initialiser l'état local pour displayDrawer
     this.state = {
       displayDrawer: false,
-      isLoggedIn: false,
     };
 
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.handleDisplayDrawer = this.handleDisplayDrawer.bind(this);
     this.handleHideDrawer = this.handleHideDrawer.bind(this);
-    this.handleLogin = this.handleLogin.bind(this);
   }
 
   listCourses = [
@@ -54,10 +52,6 @@ class App extends React.Component {
     this.setState({ displayDrawer: false });
   }
 
-  handleLogin() {
-    this.setState({ isLoggedIn: true });
-  }
-
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress);
   }
@@ -79,13 +73,13 @@ class App extends React.Component {
             />
             <Header />
           </div>
-          {this.state.isLoggedIn ? (
+          {this.props.isLoggedIn ? (
             <BodySectionWithMarginBottom title="Course list">
               <CourseList listCourses={this.listCourses} />
             </BodySectionWithMarginBottom>
           ) : (
             <BodySectionWithMarginBottom title="Log in to continue">
-              <Login logIn={this.handleLogin} />
+              <Login />
             </BodySectionWithMarginBottom>
           )}
           <BodySection title="News from the school">

@@ -28,7 +28,9 @@ const styles = StyleSheet.create({
     width: "100%",
     border: "1px solid #ddd",
     fontSize: "1.2rem",
-    margin: "auto"
+    marginBottom: "15em",
+    marginLeft: "auto",
+    marginRight: "auto",
   },
 
   th: {
